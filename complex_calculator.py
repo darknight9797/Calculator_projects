@@ -51,7 +51,7 @@ while True:
     try:
         choice = int(input("Enter your choice of operation: "))
     except:
-        print("please enter a valid value")
+        print("please enter an integer value")
         continue
     
     if choice == 9:
@@ -63,7 +63,7 @@ while True:
             n1 = float(input("enter no.1: "))
             print(f'square root of {n1} is {sqrt(n1)}')
         except:
-            print("Invalid input")
+            print("Invalid input, please enter one float value at the input")
         continue
     
     if 1 <= choice <= 8:
@@ -71,7 +71,7 @@ while True:
             n1 = float(input("Enter first number: "))
             n2 = float(input("Enter second number: "))
         except:
-            print("Invalid value")
+            print("Invalid input(s), please enter either one or two float values at the input")
             continue
     
         if choice == 1: print(f'sum of {n1} and {n2} is {add(n1,n2)} ')
@@ -82,5 +82,5 @@ while True:
         elif choice == 7: print(f'modulus of {n1} and {n2} is {modulus(n1,n2)} ')
         elif choice == 8: print(f'floor division of {n1} and {n2} is {fdiv(n1,n2)} ')
         
-    else: print("invalid choice")
+    else: print("invalid choice, please enter a number between 1-9")
         
