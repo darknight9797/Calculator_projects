@@ -59,10 +59,12 @@ while True:
         break
     
     elif choice == 6:
-        n1 = int(input("enter no.1: "))
+        n1 = float(input("enter no.1: "))
         print(f'square root of {n1} is {sqrt(n1)}')
     
-    else:
+    if 1 <= choice <= 8:
+        n1 = float(input(Enter number 1: ))
+        n2 = float(input(Enter number 2: ))
         if choice == 1:
             print(f'sum of {n1} and {n2} is {add(n1,n2)} ')
         elif choice == 2:    
@@ -77,6 +79,7 @@ while True:
             print(f'modulus of {n1} and {n2} is {modulus(n1,n2)} ')
         elif choice == 8:
             print(f'floor division of {n1} and {n2} is {fdiv(n1,n2)} ')
-        else:
-            print("invalid choice")
+        
+    else:
+        print("invalid choice")
         
