@@ -1,7 +1,7 @@
 import tkinter as tk
 
 def calculate_monthly_salary():
-    salary = int(salary_entry.get())
+    salary = float(salary_entry.get())
     monthly_salary = salary * 100000 // 12
     result_label.config(text=f"Your monthly salary is: {monthly_salary} INR")
 
